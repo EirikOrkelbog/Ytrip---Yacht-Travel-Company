@@ -1,0 +1,27 @@
+:root {
+	/* Font-size */
+	--paragraph: 1rem;
+	--heading: 4.5rem;
+	--subheading: 1.875rem 
+
+	/* Font-weight */
+	--regular: 400;
+	--bold: 600;
+
+	/* Font-family */
+	--headings: montserrat, sans-serif;
+	--paragraphs: inter, sans-serif;
+
+	/* Color */
+	--main-color: #070712;
+	--secondary-color: #e5e4f1;
+	--button-color: #02A090;
+
+	/* Margin */
+	--desktop-section-margin: 12.5rem 0;
+	--mobile-section-margin: 5rem 0; 
+
+	/* Padding */
+	--desktop-section-padding: 2rem 0;
+	--mobile-section-padding: 1rem 0;  
+}
