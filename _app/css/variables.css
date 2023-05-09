@@ -1,20 +1,24 @@
 :root {
-	/* Font-size */
+	/* Font-size desktop */
 	--paragraph: 1rem;
-	--heading: 4.5rem;
-	--subheading: 1.875rem 
+	--heading: clamp(4rem, 8vw, 6rem);
+	--subheading: 1.2rem; 
+
+	/* Font-size mobile */
+	--heading-mobile: 4rem;
+	--subheading-mobile: 2rem;
 
 	/* Font-weight */
 	--regular: 400;
 	--bold: 600;
 
 	/* Font-family */
-	--headings: montserrat, sans-serif;
-	--paragraphs: inter, sans-serif;
+	--headings: 'Inter', sans-serif;
+	--paragraphs: 'Montserrat', sans-serif;
 
 	/* Color */
 	--main-color: #070712;
-	--secondary-color: #e5e4f1;
+	--secondary-color: #ffffff;
 	--button-color: #02A090;
 
 	/* Margin */
@@ -22,6 +26,10 @@
 	--mobile-section-margin: 5rem 0; 
 
 	/* Padding */
-	--desktop-section-padding: 2rem 0;
-	--mobile-section-padding: 1rem 0;  
+	--desktop-section-padding: 0 2rem;
+	--mobile-section-padding: 0 1rem;
+	--nav-padding: 2.5rem 2.5rem 1.5rem 2.5rem;
+	
+	/* Flex Gap */
+	--flex-gap: 2.5rem;
 }
