@@ -7,11 +7,6 @@ export default function header() {
 	function handleMenuClick() {
 		toggleMenu();
 	}
-
-	// // check the initial state of the navigation menu
-	// if (navLinks.classList.contains('active')) {
-	// 	navLinks.classList.remove('active');
-	// }
 	
 	function toggleMenu(event) {
 		navLinks.classList.toggle('active');
