@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Ytrip</title>
-		
+
 		<link rel="stylesheet" href="/_app/css/main.css">
 		<script type="module" src="/_app/js/main.js"></script>
 	</head>
-	
+
 	<body class="body">
 		<header class="header">
 			<nav class="nav">
 				<a href="/" class="header__logo">
 					<img src="/_app/assets/logo/Ytrip-logo.svg" alt="go to home page">
-				 </a>
-				 <button class="menu">
+				</a>
+				<button class="menu">
 					<img src="/_app/assets/icons/Menu.svg" alt="open menu">
-				 </button>
-				 <ul class="nav__links">
+				</button>
+				<ul class="nav__links">
 					<li><a href="/">Cruises</a></li>
 					<li><a href="/">Blog</a></li>
 					<li><a href="/">FAQ</a></li>
 					<li><a href="/">Contact</a></li>
-				 </ul>
+				</ul>
 			</nav>
 
 			<img src="/_app/assets/images/originals/header.jpg" alt="" class="header__image">
@@ -33,18 +34,61 @@
 			<h1 class="header__heading">Let's take<span>a yacht</span><span>trip</span></h1>
 		</header>
 		<main>
-			<section class="info">
+			<section class="info section">
 				<div class="grid-container info__container">
 					<div class="content-container">
 						<h2 class="subheading-mobile">Welcome aboard!</h2>
-						<p>Our company invites you on a fascinating sea voyage to uninhabited islands or unknown places for tourists. We love what we do with all our hearts and we are ready to share it with you. Yachting is our life, choose a yacht and go with us on a trip!</p>
-						<p>There is a belief that yachting is expensive, but sailing is in the same price range as a vacation in Europe. </p>
+						<p>Our company invites you on a fascinating sea voyage to uninhabited islands or unknown places for
+							tourists. We love what we do with all our hearts and we are ready to share it with you. Yachting is
+							our life, choose a yacht and go with us on a trip!
+						</p>
+						<p>There is a belief that yachting is expensive, but sailing is in the same price range as a vacation in
+							Europe.
+						</p>
 					</div>
 					<img src="/_app/assets/images/originals/info1.jpg" alt="" id="info1">
 					<img src="/_app/assets/images/originals/info2.jpg" alt="" id="info2">
 				</div>
 			</section>
+
+			<section class="trips section">
+				<h2 class="subheading-mobile">See our nearest trips</h2>
+				<div class="slideshow">
+					<div class="slideshow__slides">
+						<div class="slideshow__slide slide-active">
+							<img class="slideshow__slide-image" src="/_app/assets/images/originals/caribbean-trip.jpg" alt="">
+							<span>$1080</span>
+							<p>Luxury catamaran in the caribbean</p>
+							<p>7 days</p>
+						</div>
+
+						<div class="slideshow__slide">
+							<img class="slideshow__slide-image" src="/_app/assets/images/originals/thailand-trip.jpg" alt="">
+							<span>$800</span>
+							<p>New Years Regatta in Thailand</p>
+							<p>14 days</p>
+						</div>
+
+						<div class="slideshow__slide">
+							<img class="slideshow__slide-image" src="/_app/assets/images/originals/turkey-trip.jpg" alt="">
+							<span>$700</span>
+							<p>Luxury Holidays in Turkey</p>
+							<p>8 days</p>
+						</div>
+					</div>
+
+					<div class="slideshow__buttons">
+						<button class="slideshow__button button-previous">&larr;</button>
+
+						<button class="slideshow__button button-next">&rarr;</button>
+					</div>
+				</div>
+			</section>
+			<section class="section">
+
+			</section>
 		</main>
 		<footer></footer>
 	</body>
+
 </html>
