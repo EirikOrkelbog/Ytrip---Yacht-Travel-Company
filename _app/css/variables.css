@@ -2,7 +2,8 @@
 	/* Font-size desktop */
 	--paragraph: 1rem;
 	--heading: clamp(4rem, 8vw, 6rem);
-	--subheading: 1.2rem; 
+	--subheading: 1.2rem;
+	--arrows: 1.4rem; 
 
 	/* Font-size mobile */
 	--heading-mobile: 4rem;
@@ -20,6 +21,7 @@
 	--main-color: #070712;
 	--secondary-color: #fae6e6;
 	--button-color: #02A090;
+	--background-color: #ffffff;
 
 	/* Margin */
 	--desktop-section-margin: 12.5rem 0;
@@ -30,7 +32,9 @@
 	--desktop-section-padding: 5rem;
 	--mobile-section-padding: 5rem 1.5rem;
 	--nav-padding: 2.5rem 2.5rem 1.5rem 2.5rem;
+	--price: .5rem 1rem;
 	
 	/* Flex Gap */
 	--flex-gap: 2.5rem;
+	--normal-gap: 1rem;
 }
