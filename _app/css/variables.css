@@ -18,16 +18,17 @@
 
 	/* Color */
 	--main-color: #070712;
-	--secondary-color: #ffffff;
+	--secondary-color: #fae6e6;
 	--button-color: #02A090;
 
 	/* Margin */
 	--desktop-section-margin: 12.5rem 0;
-	--mobile-section-margin: 5rem 0; 
+	--mobile-section-margin: 5rem 0;
+	--headings-margin-bottom: .5rem; 
 
 	/* Padding */
-	--desktop-section-padding: 0 2rem;
-	--mobile-section-padding: 0 1rem;
+	--desktop-section-padding: 5rem;
+	--mobile-section-padding: 5rem 1.5rem;
 	--nav-padding: 2.5rem 2.5rem 1.5rem 2.5rem;
 	
 	/* Flex Gap */
