@@ -1,6 +1,5 @@
 body {
-	color: var(--secondary-color);
-	overflow: hidden;
+	color: var(--main-color);
 }
 
 a {
@@ -16,4 +15,22 @@ button {
 	background-color: transparent;
 	border: none;
 	cursor: pointer;
+}
+
+p {
+	font-size: var(--paragraph);
+	font-family: var(--paragraphs);
+	font-weight: var(--regular);
+}
+
+.flex-container {
+	display: flex;
+	gap: var(--flex-gap);
+}
+
+.subheading-mobile {
+	font-size: var(--subheading-mobile);
+	font-family: var(--headings);
+	font-weight: var(--regular);
+	margin-bottom: var(--headings-margin-bottom);
 }
