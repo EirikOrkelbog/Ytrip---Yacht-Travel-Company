@@ -2,10 +2,6 @@
 	display: none;
 }
 
-.info {
-	padding: var(--mobile-section-padding);
-}
-
 .grid-container {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -23,7 +19,7 @@
 }
 
 @media screen and (min-width: 768px) {
-	.info {
+	.section {
 		padding: var(--desktop-section-padding);
 	}
 
