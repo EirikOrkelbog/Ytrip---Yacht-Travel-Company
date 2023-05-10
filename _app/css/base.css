@@ -23,6 +23,10 @@ p {
 	font-weight: var(--regular);
 }
 
+.section {
+	padding: var(--mobile-section-padding);
+}
+
 .flex-container {
 	display: flex;
 	gap: var(--flex-gap);
