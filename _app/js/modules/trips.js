@@ -2,43 +2,47 @@ export default function trips() {
 	const slides = document.querySelectorAll('.slideshow__slide');
 	const buttonPrevious = document.querySelector('.button-previous');
 	const buttonNext = document.querySelector('.button-next');
-	console.log(slides, buttonNext, buttonPrevious);
 
 	buttonPrevious.addEventListener('click', handleButtonPreviousClick);
 	buttonNext.addEventListener('click', handleButtonNextClick);
+	window.addEventListener('resize', handleResizeWindow);
 
 	function handleButtonPreviousClick(event) {
-		showPreviousSlide();
-		updateSlideshowHTML();
+		plusSlides(-1);
 	}
 
 	function handleButtonNextClick(event) {
-		showNextSlide();
+		plusSlides(1);
+	}
+
+	function handleResizeWindow() {
+		slidesPerView = window.innerWidth > 992 ? 3 : 1;
 		updateSlideshowHTML();
 	}
 
+	let slidesPerView = window.innerWidth > 992 ? 3 : 1;
 	let currentSlideIndex = 0;
 
-	function showPreviousSlide() {
-		if (currentSlideIndex > 0) {
-			currentSlideIndex--;
-		} else {
-			currentSlideIndex = slides.length - 1;
-		}
-	}
-
-	function showNextSlide() {
-		if (currentSlideIndex < slides.length - 1) {
-			currentSlideIndex++;
-		} else {
-			currentSlideIndex = 0;
-		}
-	}
+	updateSlideshowHTML();
 
 	function updateSlideshowHTML() {
-		for (const slide of slides) {
-			slide.classList.remove('slide-active');
+		for (let index = 0; index < slides.length; index++) {
+			slides[index].classList.remove('slide-active');
 		}
-		slides[currentSlideIndex].classList.add('slide-active');
+		for (let index = currentSlideIndex; index < currentSlideIndex + slidesPerView; index++) {
+			if (index < slides.length) {
+				slides[index].classList.add('slide-active');
+			}
+		}
+	}
+
+	function plusSlides(addedSlides) {
+		currentSlideIndex += addedSlides;
+		if (currentSlideIndex < 0) {
+			currentSlideIndex = slides.length - slidesPerView;
+		} else if (currentSlideIndex > slides.length - slidesPerView) {
+			currentSlideIndex = 0;
+		}
+		updateSlideshowHTML();
 	}
 }
