@@ -27,7 +27,7 @@ p {
 	padding: var(--mobile-section-padding);
 }
 
-.flex-container {
+.flex__container {
 	display: flex;
 	gap: var(--flex-gap);
 }
@@ -37,4 +37,20 @@ p {
 	font-family: var(--headings);
 	font-weight: var(--regular);
 	margin-bottom: var(--headings-margin-bottom);
+}
+
+.button {
+	display: block;
+	background-color: var(--button-color);
+	padding: .5rem 1rem;
+	font-family: var(--headings);
+	font-weight: var(--regular);
+	font-size: var(--subheading);
+	color: var(--background-color);
+	text-transform: uppercase;
+	margin-top: 2rem;
+}
+
+.button:hover {
+	background-color: #02a090e6;
 }
