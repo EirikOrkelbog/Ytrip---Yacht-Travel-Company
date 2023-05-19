@@ -27,10 +27,6 @@
 	transition: transform .6s ease-in-out;
 }
 
-.nav__links:hover {
-	color: white;
-}
-
 .active {
 	transform: translateX(-256px);
 }
@@ -59,10 +55,6 @@
 	.nav__links li {
 		padding: .5rem 0 3rem 0;
 	}
-
-	/* .nav__links li:first-child {
-		border-bottom: 3px solid white;
-	} */
 
 	.active {
 		display: flex;
