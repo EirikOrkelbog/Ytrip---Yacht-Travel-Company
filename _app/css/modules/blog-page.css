@@ -1,0 +1,33 @@
+.nav__links-black {
+	color: var(--main-color);
+}
+
+.nav__underline {
+	border-bottom: 1px solid black;
+}
+
+.blog__underline li:nth-child(2) {
+	border-bottom: 3px solid black;
+}
+
+.blog__heading {
+	margin-bottom: 1.5rem;
+}
+
+.blog__page-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: var(--flex-gap);
+}
+
+@media screen and (min-width: 768px) {
+	.blog__page-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.blog__page-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
