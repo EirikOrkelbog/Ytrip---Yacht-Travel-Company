@@ -13,15 +13,15 @@
 <body class="body">
 	<header class="header">
 		<nav class="nav">
-			<a href="/" class="header__logo">
+			<a href="/index.html" class="header__logo">
 				<img src="/_app/assets/logo/Ytrip-logo.svg" alt="go to home page">
 			</a>
 			<button class="menu">
 				<img src="/_app/assets/icons/Menu.svg" alt="open menu">
 			</button>
 			<ul class="nav__links">
-				<li><a href="/">Cruises</a></li>
-				<li><a href="/">Blog</a></li>
+				<li><a href="/pages/cruises.html">Cruises</a></li>
+				<li><a href="/pages/blog.html">Blog</a></li>
 				<li><a href="/">FAQ</a></li>
 				<li><a href="/">Contact</a></li>
 			</ul>
@@ -35,8 +35,8 @@
 	</header>
 	<main>
 		<section class="info section">
-			<div class="grid-container info__container">
-				<div class="content-container">
+			<div class="grid__container info__container">
+				<div class="content__container">
 					<h2 class="subheading-mobile">Welcome aboard!</h2>
 					<p>Our company invites you on a fascinating sea voyage to uninhabited islands or unknown places for
 						tourists. We love what we do with all our hearts and we are ready to share it with you. Yachting is
@@ -45,6 +45,7 @@
 					<p>There is a belief that yachting is expensive, but sailing is in the same price range as a vacation in
 						Europe.
 					</p>
+					<button class="button">Book now</button>
 				</div>
 				<img src="/_app/assets/images/originals/info1.jpg" alt="" id="info1">
 				<img src="/_app/assets/images/originals/info2.jpg" alt="" id="info2">
@@ -98,11 +99,164 @@
 			</div>
 		</section>
 
-		<section class="section">
+		<section class="benefits section">
+			<div class="benefits__container">
+				<div class="benefits__content">
+					<h2 class="subheading-mobile">Benefit of yacht travel</h2>
+					<ul>
+						<li>Best views</li>
+						<p>The opportunity to see much more than a hotel resort. Each day the yacht sails to new places,
+							discovering new landscapes and beauties for you.</p>
+						<li>Port cities</li>
+						<p>Free time in port cities. You can request for stops in ports of your choice, were you can see
+							museums, gallerys or other attractions.</p>
+						<li>Silence</li>
+						<p>No ambiguous crowds of tourists. When on vacation the noise from the hotel, city and beach often
+							bothers. Vacation on a yacht is designed to escape crowded places.</p>
+						<li>Diving and snorkeling</li>
+						<p>The widest opportunities for diving and snorkling. The routes pass through lagoons with magnificent
+							coral reefs, tunnels and caves avalible for scuba diving and snorkling.</p>
+					</ul>
+				</div>
+				<div class="benefits__image"></div>
+			</div>
+		</section>
 
+		<section class="section">
+			<div class="reviews__container">
+				<div class="reviews__image"></div>
+				<div class="reviews__content">
+					<h2 class="subheading-mobile">We had a tremendous pleasure</h2>
+					<p class="reviews__paragraph">The usual European travel does not give the freedome that we had on the
+						yacht. A similar independence is given only by traveling by car - when at any moment you can go
+						further and see something else. Thanks for the best trip, we had an amazing experience!</p>
+					<span>Natalie Portman</span>
+					<p>Trip to Maldives</p>
+					<img src="/_app/assets/icons/quotation-mark.svg" alt="">
+					<div class="reviews__buttons">
+						<button class="slideshow__button button-previous">&larr;</button>
+						<button class="slideshow__button button-next">&rarr;</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section">
+			<h2 class="subheading-mobile">Our blog</h2>
+			<div class="blog__grid">
+				<div class="blog__item item1">
+					<img src="/_app/assets/images/originals/blog1.jpg" alt="" class="blog__image-small">
+					<div class="blog__item-text">
+						<span>5 places you need to visit</span>
+						<p>The usual European travel does not give the freedome that we had on the yacht. A similar
+							independence is given only by traveling by car.</p>
+						<a href="/pages/articles.html">Read more &rarr;</a>
+					</div>
+				</div>
+				<div class="blog__item item2">
+					<img src="/_app/assets/images/originals/blog2.jpg" alt="" class="blog__image-small">
+					<div class="blog__item-text">
+						<span>New Years regatta in Thailand</span>
+						<p>The usual European travel does not give the freedome that we had on the yacht. A similar
+							independence is given only by traveling by car.</p>
+						<a href="/pages/articles.html">Read more &rarr;</a>
+					</div>
+				</div>
+				<div class="blog__item item3">
+					<img src="/_app/assets/images/originals/blog3.jpg" alt="" class="blog__image-small">
+					<div class="blog__item-text">
+						<span>Ocean Quarantine</span>
+						<p>The usual European travel does not give the freedome that we had on the yacht. A similar
+							independence is given only by traveling by car.</p>
+						<a href="/pages/articles.html">Read more &rarr;</a>
+					</div>
+				</div>
+				<div class="item4">
+					<img src="/_app/assets/images/originals/blog4.jpg" alt="" class="blog__image-large">
+					<div class="blog__item-text">
+						<span>Without communication on a desert island</span>
+						<p>The usual European travel does not give the freedome that we had on the yacht. A similar
+							independence is given only by traveling by car.</p>
+						<a href="/pages/articles.html">Read more &rarr;</a>
+					</div>
+				</div>
+			</div>
+			<a href="" class="blog__link">Read all articles here</a>
+		</section>
+
+		<section class="action">
+			<div class="action__image-main">
+
+			</div>
+		</section>
+
+		<section class="faq section" id="faq">
+			<div>
+				<h3>FAQ</h3>
+				<h2 class="subheading-mobile">Frequently asked questions</h2>
+			</div>
+			<div class="faq__container">
+				<div class="faq__item">
+					<div>
+						<img src="/_app/assets/icons/plus.svg" alt="">
+						<p class="faq__question">What is included in a typical yacht trip package?</p>
+					</div>
+					<p class="faq__answer hide-answer">Our cancellation policy varies depending on the package and the time
+						of cancellation. Generally, cancellations made within 30 days of the trip start date will result in a
+						partial refund, while cancellations made within 14 days of the trip start date are non-refundable.</p>
+				</div>
+				<div class="faq__item">
+					<div>
+						<img src="/_app/assets/icons/plus.svg" alt="">
+						<p class="faq__question">What is included in a typical yacht trip package?</p>
+					</div>
+					<p class="faq__answer hide-answer">Our cancellation policy varies depending on the package and the time
+						of cancellation. Generally, cancellations made within 30 days of the trip start date will result in a
+						partial refund, while cancellations made within 14 days of the trip start date are non-refundable.</p>
+				</div>
+				<div class="faq__item">
+					<div>
+						<img src="/_app/assets/icons/plus.svg" alt="">
+						<p class="faq__question">What is included in a typical yacht trip package?</p>
+					</div>
+					<p class="faq__answer hide-answer">Our cancellation policy varies depending on the package and the time
+						of cancellation. Generally, cancellations made within 30 days of the trip start date will result in a
+						partial refund, while cancellations made within 14 days of the trip start date are non-refundable.</p>
+				</div>
+			</div>
+			<img src="/_app/assets/images/originals/faq.jpg" alt="" class="faq__image">
 		</section>
 	</main>
-	<footer></footer>
+
+	<footer>
+		<section class="footer">
+			<div class="footer__grid">
+				<div class="footer__contact">
+					<h2 class="subheading-mobile">Contact</h2>
+					<p>Email:</p>
+					<a href="">yachtclub@gmail.com</a>
+					<p>Phone:</p>
+					<a href="">+123 4655 9306</a>
+					<div class="footer__social-links">
+						<a href="">Facebook</a>
+						<a href="">Instagram</a>
+						<a href="">Twitter</a>
+					</div>
+				</div>
+
+				<div class="footer__form">
+					<h2 class="subheading-mobile">Get more information</h2>
+					<input type="text" placeholder="Name" class="form__input">
+					<input type="email" placeholder="Email" class="form__input">
+					<div class="form__data">
+						<input type="checkbox" name="data" id="data">
+						<label for="data">I agree with the processing of personal data</label>
+					</div>
+					<button class="button">Send form</button>
+				</div>
+			</div>
+		</section>
+	</footer>
 </body>
 
 </html>
