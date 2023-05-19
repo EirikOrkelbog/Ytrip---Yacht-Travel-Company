@@ -37,4 +37,5 @@
 	/* Flex Gap */
 	--flex-gap: 2.5rem;
 	--normal-gap: 1rem;
+	--blog-gap: 2rem 6rem;
 }
