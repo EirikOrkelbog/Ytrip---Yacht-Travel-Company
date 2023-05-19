@@ -2,7 +2,7 @@
 	display: none;
 }
 
-.grid-container {
+.grid__container {
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: var(--flex-gap);
@@ -14,7 +14,7 @@
 	object-fit: cover;
 }
 
-.content-container p:first-of-type {
+.content__container p:first-of-type {
 	margin-bottom: var(--headings-margin-bottom);
 }
 
@@ -23,7 +23,7 @@
 		padding: var(--desktop-section-padding);
 	}
 
-	.grid-container {
+	.grid__container {
 		grid-template-columns: 1fr 1fr;
 	}
 }
@@ -33,7 +33,7 @@
 		display: block;
 	}
 
-	.grid-container {
+	.grid__container {
 		grid-template-columns: repeat(3, 1fr);
 	}
 }
