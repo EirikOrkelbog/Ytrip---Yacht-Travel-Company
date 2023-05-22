@@ -122,21 +122,37 @@
 			</div>
 		</section>
 
-		<section class="section">
-			<div class="reviews__container">
-				<div class="reviews__image"></div>
-				<div class="reviews__content">
-					<h2 class="subheading-mobile">We had a tremendous pleasure</h2>
-					<p class="reviews__paragraph">The usual European travel does not give the freedome that we had on the
-						yacht. A similar independence is given only by traveling by car - when at any moment you can go
-						further and see something else. Thanks for the best trip, we had an amazing experience!</p>
-					<span>Natalie Portman</span>
-					<p>Trip to Maldives</p>
-					<img src="/_app/assets/icons/quotation-mark.svg" alt="">
-					<div class="reviews__buttons">
-						<button class="slideshow__button button-previous">&larr;</button>
-						<button class="slideshow__button button-next">&rarr;</button>
+		<section class="reviews section">
+			<div class="reviews__slides">
+				<div class="reviews__slide review__visible">
+					<img src="/_app/assets/images/originals/review.jpg" alt="" class="reviews__image">
+					<div class="reviews__content">
+						<h2 class="subheading-mobile">We had a tremendous pleasure</h2>
+						<p class="reviews__paragraph">The usual European travel does not give the freedome that we had on the
+							yacht. A similar independence is given only by traveling by car - when at any moment you can go
+							further and see something else. Thanks for the best trip, we had an amazing experience!</p>
+						<span>Natalie Portman</span>
+						<p>Trip to Maldives</p>
+						<img src="/_app/assets/icons/quotation-mark.svg" alt="">
 					</div>
+				</div>
+
+				<div class="reviews__slide">
+					<img src="/_app/assets/images/originals/blog2.jpg" alt="" class="reviews__image">
+					<div class="reviews__content">
+						<h2 class="subheading-mobile">We had a tremendous time</h2>
+						<p class="reviews__paragraph">The usual European travel does not give the freedome that we had on the
+							yacht. A similar independence is given only by traveling by car - when at any moment you can go
+							further and see something else.</p>
+						<span>Roger Portman</span>
+						<p>Trip to Maldives</p>
+						<img src="/_app/assets/icons/quotation-mark.svg" alt="">
+					</div>
+				</div>
+				
+				<div class="reviews__buttons">
+					<button class="slideshow__button button-previous" id="review__previous">&larr;</button>
+					<button class="slideshow__button button-next" id="review__next">&rarr;</button>
 				</div>
 			</div>
 		</section>
@@ -184,18 +200,31 @@
 			<a href="" class="blog__link">Read all articles here</a>
 		</section>
 
-		<section class="action">
-			<div class="action__image-main">
-
-			</div>
-		</section>
-
-		<section class="faq section" id="faq">
-			<div>
+		<section class="faq section">
+			<div class="faq__container"> 
 				<h3>FAQ</h3>
 				<h2 class="subheading-mobile">Frequently asked questions</h2>
+				<img src="/_app/assets/images/originals/faq.jpg" alt="" class="faq__image">
 			</div>
-			<div class="faq__container">
+			<div class="faq__container faq__questions">
+				<div class="faq__item">
+					<div>
+						<img src="/_app/assets/icons/plus.svg" alt="">
+						<p class="faq__question">What is included in a typical yacht trip package?</p>
+					</div>
+					<p class="faq__answer hide-answer">Our cancellation policy varies depending on the package and the time
+						of cancellation. Generally, cancellations made within 30 days of the trip start date will result in a
+						partial refund, while cancellations made within 14 days of the trip start date are non-refundable.</p>
+				</div>
+				<div class="faq__item">
+					<div>
+						<img src="/_app/assets/icons/plus.svg" alt="">
+						<p class="faq__question">What is included in a typical yacht trip package?</p>
+					</div>
+					<p class="faq__answer hide-answer">Our cancellation policy varies depending on the package and the time
+						of cancellation. Generally, cancellations made within 30 days of the trip start date will result in a
+						partial refund, while cancellations made within 14 days of the trip start date are non-refundable.</p>
+				</div>
 				<div class="faq__item">
 					<div>
 						<img src="/_app/assets/icons/plus.svg" alt="">
@@ -224,7 +253,6 @@
 						partial refund, while cancellations made within 14 days of the trip start date are non-refundable.</p>
 				</div>
 			</div>
-			<img src="/_app/assets/images/originals/faq.jpg" alt="" class="faq__image">
 		</section>
 	</main>
 
