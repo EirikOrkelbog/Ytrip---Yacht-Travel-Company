@@ -18,14 +18,18 @@ export default {
 			},
 		},
 		{
-			title: 'Image',
 			name: 'image',
+			title: 'Image',
 			type: 'image'
 		},
 		{
 			name: 'author',
 			title: 'Author',
-			type: 'string',
+			type: 'reference',
+			to: [{ type: 'writers' }],
+			options: {
+				filter: '_type == "author"',
+			}
 		},
 		{
 			name: 'publicationDate',
