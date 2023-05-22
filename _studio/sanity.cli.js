@@ -1,6 +1,6 @@
 export default {
   api: {
-    projectId: '',
-    dataset: ''
+    projectId: '5khmsjz8',
+    dataset: 'production'
   }
 }

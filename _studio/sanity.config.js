@@ -4,10 +4,10 @@ import { visionTool } from '@sanity/vision';
 import schemas from './schemas/schemas.js';
 
 export default {
-	title: 'Studio',
+	title: 'Ytrip - Yacht Travel Company',
 
-	projectId: '',
-	dataset: '',
+	projectId: '5khmsjz8',
+	dataset: 'production',
 
 	plugins: [deskTool(), visionTool()],
 
