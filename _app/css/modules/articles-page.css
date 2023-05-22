@@ -1,6 +1,6 @@
 .article__image {
 	width: 100%;
-	height: 80vh;
+	height: 60vh;
 	object-fit: cover;
 }
 
@@ -11,6 +11,33 @@
 
 .article__paragraph {
 	margin: 0 auto;
+}
+
+.article__info {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: var(--normal-gap);
+	width: 100%;
+}
+
+.article__info span {
+	order: 1;
+}
+
+.article__writer {
+	display: inline-block;
+	height: 3rem;
+	width: 3rem;
+	border-radius: 100%;
+	background-image: url(/_app/assets/images/originals/benefits.jpg);
+	background-size: cover;
+	background-position: center;
+	order: 1;
+}
+
+.article__published {
+	order: 2;
 }
 
 @media screen and (min-width: 768px) {
