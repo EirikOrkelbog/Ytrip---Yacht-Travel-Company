@@ -22,9 +22,13 @@
 	gap: var(--flex-gap);
 	font-size: var(--subheading-mobile);
 	font-family: var(--paragraphs);
-	color: var(--secondary-color);
+	color: var(--main-color);
 	background-color: rgba(0, 0, 0, 0.9);
 	transition: transform .6s ease-in-out;
+}
+
+.nav__links-white {
+	color: var(--secondary-color);
 }
 
 .active {
