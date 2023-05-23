@@ -1,6 +1,6 @@
 export default {
-	name: 'writers',
-	title: 'Writers',
+	name: 'writer',
+	title: 'Writer',
 	type: 'document',
 	fields: [
 		{
@@ -13,7 +13,7 @@ export default {
 			title: 'Profile picture',
 			type: 'image',
 			options: {
-			  hotspot: true // <-- Defaults to false
+			  hotspot: true
 			},
 		},
 	],
