@@ -40,7 +40,7 @@ p {
 }
 
 .button {
-	display: block;
+	display: inline-block;
 	background-color: var(--button-color);
 	padding: .5rem 1rem;
 	font-family: var(--headings);
@@ -48,6 +48,7 @@ p {
 	font-size: var(--subheading);
 	color: var(--background-color);
 	text-transform: uppercase;
+	text-align: center;
 	margin-top: 2rem;
 }
 
