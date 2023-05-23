@@ -22,7 +22,7 @@
 	gap: var(--flex-gap);
 	font-size: var(--subheading-mobile);
 	font-family: var(--paragraphs);
-	color: var(--main-color);
+	color: var(--secondary-color);
 	background-color: rgba(0, 0, 0, 0.9);
 	transition: transform .6s ease-in-out;
 }
@@ -53,6 +53,7 @@
 		transform: translate(0, 0);
 		font-size: var(--subheading);
 		background-color: transparent;
+		color: var(--main-color);
 		padding: 0;
 	}
 
