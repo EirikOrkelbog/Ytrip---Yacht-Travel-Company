@@ -1,7 +1,11 @@
-import article from "./documents/article.js"
+import navigation from "./documents/navigation.js"
+import blog from "./documents/blog.js"
 import writer from "./documents/writer.js"
+import cruises from "./documents/cruises.js"
 
 export default [
-	article,
+	navigation,
+	blog,
 	writer,
+	cruises,
 ]
