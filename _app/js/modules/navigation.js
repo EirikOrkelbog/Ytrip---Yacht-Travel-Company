@@ -1,4 +1,4 @@
-export default function header() {
+export default function navigation() {
 	const menu = document.querySelector('.menu');
 	const navLinks = document.querySelector('.nav__links');
 	const links = document.querySelectorAll('.nav__links li');
