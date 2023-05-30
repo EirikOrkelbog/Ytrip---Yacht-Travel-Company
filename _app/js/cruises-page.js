@@ -1,6 +1,7 @@
 import { sanity } from "./sanity.js";
-import header from "./modules/header.js";
-header();
+import navigation from "./modules/navigation.js";
+navigation();
+import fetchImage from "./modules/fetchImage.js";
 
 export default async function cruisesPage() {
 	const query = `*[_type == 'cruises']`;
@@ -10,11 +11,9 @@ export default async function cruisesPage() {
 
 	async function renderCruisesHTML() {
 		for (const cruise of cruises) {
-
-			const imageAssetId = cruise.image.asset._ref;
-			const imageAssetQuery = `*[_id == "${imageAssetId}"]`;
-			const imageAsset = await sanity.fetch(imageAssetQuery);
-			const imageUrl = imageAsset[0].url;
+			// Getting image url
+			const imageId = cruise.image.asset._ref;
+			const imageUrl = await fetchImage(imageId);
 
 			// Formatting dateStart from yyyy-mm-dd to dd.mm.yyyy
 			const dateStart = cruise.dateStart;
@@ -31,7 +30,7 @@ export default async function cruisesPage() {
 			const end = new Date(dateEnd);
 			const endYear = end.getFullYear();
 			let endMonth = end.getMonth();
-			let endDay = end.getDate(); 
+			let endDay = end.getDate();
 			if (endDay < 10) endDay = '0' + endDay;
 			if (endMonth < 10) endMonth = '0' + endMonth;
 			const formattedDateEnd = endDay + '.' + endMonth + '.' + endYear;

@@ -1,6 +1,7 @@
 import { sanity } from "./sanity.js";
-import header from "./modules/header.js";
-header();
+import navigation from "./modules/navigation.js";
+navigation();
+import fetchImage from "./modules/fetchImage.js";
 
 export default async function blogPage() {
 	const query = `*[_type == 'blogPost']{image, title, about, _id}`;
@@ -10,11 +11,9 @@ export default async function blogPage() {
 
 	async function renderBlogHTML() {
 		for (const blogPost of blogPosts) {
-			const imageAssetId = blogPost.image.asset._ref;
-			// Fetching the image asset
-			const imageAssetQuery = `*[_id == "${imageAssetId}"]`;
-			const imageAsset = await sanity.fetch(imageAssetQuery);
-			const imageUrl = imageAsset[0].url;
+			// Getting image url
+			const imageId = blogPost.image.asset._ref;
+			const imageUrl = await fetchImage(imageId);
 
 			const blogItem = document.createElement('div');
 			const blogImage = document.createElement('img');
