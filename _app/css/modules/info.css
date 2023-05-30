@@ -1,4 +1,4 @@
-#info1 {
+.hide {
 	display: none;
 }
 
@@ -29,7 +29,7 @@
 }
 
 @media screen and (min-width: 992px) {
-	#info1 {
+	.hide {
 		display: block;
 	}
 
