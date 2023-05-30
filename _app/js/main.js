@@ -1,5 +1,5 @@
 import settingsDOM from "./modules/settingsDOM.js";
-import header from "./modules/header.js";
+import navigation from "./modules/navigation.js";
 import trips from "./modules/trips.js";
 import video from "./modules/video.js";
 import reviews from "./modules/reviews.js";
@@ -8,7 +8,7 @@ import faqFunctionality from "./modules/faq-functionality.js";
 import faqSection from "./modules/faq-section.js";
 
 settingsDOM();
-header();
+navigation();
 trips();
 video();
 reviews();
