@@ -19,8 +19,8 @@ export default {
 			fields: [
 				{ name: 'infoHeading', title: 'Info Heading', type: 'string' },
 				{ name: 'infoText', title: 'Info Text', type: 'text' },
-				{ name: 'desktopImage', title: 'Desktop Image', type: 'image' },
-				{ name: 'mobileImage', title: 'Mobile Image', type: 'image' },
+				{ name: 'image', title: 'Image', type: 'image' },
+				{ name: 'hiddenImage', title: 'Hidden on mobile', type: 'image' },
 			]
 		},
 		{
@@ -29,7 +29,7 @@ export default {
 			type: 'object',
 			fields: [
 				{ name: 'benefitsHeading', title: 'Benefits Heading', type: 'string' },
-				{ name: 'benefitsList', title: 'Benefits List', type: 'array', of: [{ type: 'string' }] },
+				{ name: 'benefitsList', title: 'Benefits List', type: 'array', of: [{ type: 'benefitsList' }] },
 				{ name: 'benefitsImage', title: 'Benefits Image', type: 'image' },
 			]
 		},

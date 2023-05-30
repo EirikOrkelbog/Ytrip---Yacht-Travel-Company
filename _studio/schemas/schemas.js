@@ -6,6 +6,7 @@ import reviews from "./documents/reviews.js"
 import faq from "./documents/faq.js"
 import faqObject from "./documents/faq-object.js"
 import settings from "./documents/settings.js"
+import benefitsList from "./documents/benefits-list.js"
 
 export default [
 	navigation,
@@ -16,4 +17,5 @@ export default [
 	faq,
 	faqObject,
 	settings,
+	benefitsList,
 ]
