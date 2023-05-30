@@ -18,9 +18,20 @@ export default {
 			},
 		},
 		{
-			name: 'image',
-			title: 'Image',
-			type: 'image'
+			name: 'imageSmall',
+			title: 'Image Small',
+			type: 'image',
+			options: {
+				hotspot: true
+			 }
+		},
+		{
+			name: 'imageLarge',
+			title: 'Image Large',
+			type: 'image',
+			options: {
+				hotspot: true
+			 }
 		},
 		{
 			name: 'writer',
@@ -34,14 +45,14 @@ export default {
 			type: 'date',
 		},
 		{
-			name: 'shortContent',
-			title: 'Short Content',
-			type: 'string',
+			name: 'about',
+			title: 'About trip',
+			type: 'text',
 		},
 		{
 			name: 'mainContent',
 			title: 'Main Content',
-			type: 'string',
+			type: 'text',
 		},
 	],
 };
