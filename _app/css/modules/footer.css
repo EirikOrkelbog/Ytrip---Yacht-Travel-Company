@@ -38,6 +38,7 @@
 	border: none;
 	border-bottom: 1px solid black;
 	margin-bottom: 2rem;
+	padding: .2rem;
 }
 
 .form__data {
