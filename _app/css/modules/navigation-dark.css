@@ -1,0 +1,21 @@
+.nav__underline {
+	border-bottom: 1px solid black;
+}
+
+.header__logo {
+	background-image: url(/_app/assets/logo/Ytrip-logo-black.svg);
+}
+
+.menu {
+	background-image: url(/_app/assets/icons/Menu-black.svg);
+}
+
+@media screen and (min-width: 768px) {
+	.nav__links-black {
+		color: var(--main-color);
+	}
+}
+
+.nav__links-underline {
+	border-bottom: 3px solid black;
+}

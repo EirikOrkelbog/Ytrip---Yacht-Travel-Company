@@ -39,12 +39,6 @@
 .cruises__included li {
 	margin: 1rem 0;
 }
-
-@media screen and (min-width: 768px) {	
-	.cruises__underline li:nth-child(1) {
-		border-bottom: 3px solid black;
-	}
-}
 	
 @media screen and (min-width: 992px) {
 	.cruise {
