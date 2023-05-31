@@ -1,7 +1,9 @@
 import { sanity } from "./sanity.js";
-import navigation from "./modules/navigation.js";
-navigation();
+import navigationDOM from "./modules/navigation.js";
 import fetchImage from "./modules/fetchImage.js";
+import footerDOM from "./modules/footer.js";
+navigationDOM();
+footerDOM();
 
 export default async function blogPage() {
 	const query = `*[_type == 'blogPost']{image, title, about, _id}`;

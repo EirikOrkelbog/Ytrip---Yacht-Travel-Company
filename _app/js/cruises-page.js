@@ -1,14 +1,15 @@
 import { sanity } from "./sanity.js";
-import navigation from "./modules/navigation.js";
-navigation();
+import navigationDOM from "./modules/navigation.js";
 import fetchImage from "./modules/fetchImage.js";
+import footerDOM from "./modules/footer.js";
+navigationDOM();
+footerDOM();
 
 export default async function cruisesPage() {
 	const query = `*[_type == 'cruises']`;
 	const cruises = await sanity.fetch(query);
 
 	const container = document.querySelector('.cruises');
-
 	async function renderCruisesHTML() {
 		for (const cruise of cruises) {
 			// Getting image url

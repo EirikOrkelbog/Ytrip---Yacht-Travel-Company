@@ -1,6 +1,8 @@
 import { sanity } from "./sanity.js";
-import navigation from "./modules/navigation.js";
-navigation();
+import navigationDOM from "./modules/navigation.js";
+import footerDOM from "./modules/footer.js";
+navigationDOM();
+footerDOM();
 
 export default async function articlePage() {
 	function getPostIdFromURL() {
