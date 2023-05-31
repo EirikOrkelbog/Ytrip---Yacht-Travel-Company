@@ -7,6 +7,7 @@ import faq from "./documents/faq.js"
 import faqObject from "./documents/faq-object.js"
 import settings from "./documents/settings.js"
 import benefitsList from "./documents/benefits-list.js"
+import footer from "./documents/footer.js"
 
 export default [
 	navigation,
@@ -18,4 +19,5 @@ export default [
 	faqObject,
 	settings,
 	benefitsList,
+	footer,
 ]

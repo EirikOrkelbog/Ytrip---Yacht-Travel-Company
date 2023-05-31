@@ -11,6 +11,7 @@ export default Structure => {
 			documentTypeListItem('writer'),
 			documentTypeListItem('reviews'),
 			documentTypeListItem('faq'),
+			documentTypeListItem('footer'),
 
 			divider(),
 

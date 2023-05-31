@@ -9,19 +9,45 @@ export default {
 			type: 'image',
 		},
 		{
-			name: 'title',
-			title: 'Title',
-			type: 'string',
+			name: 'logoDark',
+			title: 'Logo Dark',
+			type: 'image',
 		},
 		{
-			name: 'link',
-			title: 'Link',
-			type: 'url',
+			name: 'links',
+			title: 'Links',
+			type: 'object',
+			fields: [
+				{
+					name: 'linkName',
+					title: 'Link Name',
+					type: 'array',
+					of: [{ type: 'string' }]
+				},
+				{
+					name: 'linkHref',
+					title: 'Link Href',
+					type: 'array',
+					of: [{ type: 'string' }]
+				},
+			]
 		},
 		{
 			name: 'menuIcon',
 			title: 'Menu Icon',
 			type: 'image',
-		}
+		},
+		{
+			name: 'menuIconDark',
+			title: 'Menu Icon Dark',
+			type: 'image',
+		},
 	],
+	preview: {
+		prepare: () => {
+			return {
+				title: 'Navigation'
+			}
+		}
+	}
 };
