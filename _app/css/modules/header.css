@@ -4,10 +4,6 @@
 	position: relative;
 }
 
-.header__logo img {
-	width: 6rem;
-}
-
 .header__image {
 	position: absolute;
 	top: 0;
