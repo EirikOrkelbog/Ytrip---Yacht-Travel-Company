@@ -27,8 +27,22 @@
 	transition: transform .6s ease-in-out;
 }
 
-.nav__links-white {
-	color: var(--secondary-color);
+.header__logo {
+	width: 6rem;
+	height: 3rem;
+	background-image: url(/_app/assets/logo/Ytrip-logo.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.menu {
+	width: 3rem;
+	height: 3rem;
+	background-image: url(/_app/assets/icons/Menu.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 .active {
@@ -53,7 +67,7 @@
 		transform: translate(0, 0);
 		font-size: var(--subheading);
 		background-color: transparent;
-		color: var(--main-color);
+		color: var(--secondary-color);
 		padding: 0;
 	}
 
