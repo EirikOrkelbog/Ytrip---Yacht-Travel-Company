@@ -4,7 +4,7 @@
 	gap: var(--normal-gap);
 }
 
-.faq h3 {
+.faq__subheading {
 	font-family: var(--headings);
 	font-weight: var(--regular);
 }
