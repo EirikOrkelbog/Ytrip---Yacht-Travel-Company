@@ -24,6 +24,15 @@ export default {
 			]
 		},
 		{
+			name: 'video',
+			title: 'Video',
+			type: 'object',
+			fields: [
+				{ name: 'videoHeading', title: 'Heading', type: 'string' },
+				{ name: 'videoParagraph', title: 'Paragraph', type: 'string', },
+			]
+		},
+		{
 			name: 'benefits',
 			title: 'Benefits Section',
 			type: 'object',
