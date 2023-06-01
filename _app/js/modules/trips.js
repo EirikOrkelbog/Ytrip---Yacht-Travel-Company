@@ -16,7 +16,7 @@ export default function trips() {
 	}
 
 	function handleResizeWindow() {
-		slidesPerView = window.innerWidth > 992 ? 3 : 1;
+		slidesPerView;
 		updateSlideshowHTML();
 	}
 
@@ -36,6 +36,8 @@ export default function trips() {
 		}
 	}
 
+	// This function takes in a parameter that adds on to the currentSlideIndex and moves to next or previous slide.
+	// The function is called in the event handlers with 1 and -1 as parameters. 
 	function plusSlides(addedSlides) {
 		currentSlideIndex += addedSlides;
 		if (currentSlideIndex < 0) {

@@ -16,6 +16,8 @@ export default function reviews() {
 		previousReview();
 	}
 
+	// This function first removes the visible class from all slides, and then adds the class to the slideIndex.
+	// The slideIndex starts on index 0 when showReview(0) is called.
 	function showReview(slideIndex) {
 		for (let index = 0; index < reviews.length; index++) {
 			reviews[index].classList.remove("review__visible");
@@ -28,6 +30,7 @@ export default function reviews() {
 
 	showReview(0);
 
+	// The next and previous functions assigns a new variable; newIndex that adds or substracts 1 from the currentReview.
 	function nextReview() {
 		let newIndex = currentReview + 1;
 
