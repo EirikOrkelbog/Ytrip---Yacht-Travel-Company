@@ -16,7 +16,9 @@ export default async function navigationDOM() {
 		nav.className = 'nav nav__underline';
 		logo.className = 'header__logo';
 		logo.setAttribute('href', '/index.html');
+		logo.ariaLabel = 'go to homepage';
 		menu.className = 'menu';
+		menu.ariaLabel = 'toggle menu';
 		navLinks.className = 'nav__links nav__links-black';
 		
 		container.appendChild(nav);
