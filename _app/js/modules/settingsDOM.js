@@ -75,6 +75,7 @@ export default async function settingsDOM() {
 	content.appendChild(infoParagraph);
 	content.appendChild(callToActionButton);
 
+	// Video
 	const videoText = document.createElement('div');
 	const videoHeading = document.createElement('h2');
 	const videoParagraph = document.createElement('p');
@@ -92,7 +93,6 @@ export default async function settingsDOM() {
 	videoSource.src = '/_app/assets/videos/yacht.mp4';
 	videoSource.type = 'video/mp4';
 	videoSource.id = 'video';
-	videoElement.controls = true;
 	videoPlay.className = 'video__button';
 	videoPlayIcon.src = '/_app/assets/icons/play.svg';
 
