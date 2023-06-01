@@ -58,13 +58,13 @@ export default async function cruisesPage() {
 			cruiseImageContainer.className = 'cruises__container';
 			cruiseContainer.className = 'cruises__container';
 			cruiseImage.src = imageUrl;
-			cruiseImage.alt = '';
+			cruiseImage.loading = 'lazy';
 			cruiseImage.className = 'cruises img';
 			cruisesButton.className = 'button cruises__button'
-			cruisesButton.href = '/pages/articles.html';
+			cruisesButton.href = 'https://no.tripadvisor.com/';
 			cruisesButton.textContent = 'Book trip';
 			cruiseTitle.textContent = cruise.title;
-			cruiseTitle.className = 'subheading-mobile';
+			cruiseTitle.className = 'subheading';
 			cruiseIncludedContainer.className = 'cruises__included';
 			cruiseDetailsDuration.className = 'cruises__details';
 			cruiseDays.className = 'cruises p';
