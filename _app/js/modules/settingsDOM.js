@@ -57,7 +57,7 @@ export default async function settingsDOM() {
 
 	grid.className = 'grid__container info__container';
 	content.className = 'content__container';
-	infoHeading.className = 'subheading-mobile';
+	infoHeading.className = 'subheading';
 	infoHeading.textContent = items[0].info.infoHeading;
 	infoParagraph.textContent = items[0].info.infoText;
 	callToActionButton.className = 'button';
@@ -86,7 +86,7 @@ export default async function settingsDOM() {
 	const videoPlayIcon = document.createElement('img');
 
 	videoText.className = 'video__text';
-	videoHeading.className = 'subheading-mobile';
+	videoHeading.className = 'subheading';
 	videoHeading.textContent = items[0].video.videoHeading;
 	videoParagraph.textContent = items[0].video.videoParagraph;
 	videoPlayer.className = 'video__player';
@@ -114,7 +114,7 @@ export default async function settingsDOM() {
 	benefitsContent.className = 'benefits__content';
 	benefitsImage.className = 'benefits__image';
 	benefitsImage.src = imageBenefitsUrl;
-	benefitsHeading.className = 'subheading-mobile';
+	benefitsHeading.className = 'subheading';
 	benefitsHeading.textContent = items[0].benefits.benefitsHeading;
 	benefitsList.className = 'benefits__content ul';
 

@@ -26,7 +26,7 @@ export default async function footerDOM() {
 
 		footerGrid.className = 'footer__grid';
 		footerContact.className = 'footer__contact';
-		contactHeading.className = 'subheading-mobile';
+		contactHeading.className = 'subheading';
 		contactHeading.textContent = items[0].contact.contactHeading;
 		emailLabel.className = 'footer__contact p';
 		emailLabel.textContent = items[0].contact.emailLabel;
@@ -37,7 +37,7 @@ export default async function footerDOM() {
 		phone.setAttribute('href', '#');
 		socialLinks.className = 'footer__social-links';
 		footerForm.className = 'footer__form';
-		formHeading.className = 'subheading-mobile';
+		formHeading.className = 'subheading';
 		formHeading.textContent = items[0].form.formHeading;
 		nameInput.className = 'form__input';
 		nameInput.type = 'text';

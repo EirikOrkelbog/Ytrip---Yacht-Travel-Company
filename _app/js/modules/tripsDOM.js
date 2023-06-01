@@ -18,7 +18,7 @@ export default async function tripsDOM() {
 
 		const arrowLeft = '&larr;';
 		const arrowRight = '&rarr;';
-		tripsHeading.className = 'subheading-mobile';
+		tripsHeading.className = 'subheading';
 		tripsHeading.textContent = 'See our nearest trips';
 		slideshow.className = 'slideshow';
 		slideshowSlides.className = 'slideshow__slides';
@@ -48,6 +48,7 @@ export default async function tripsDOM() {
 			slideshowSlide.className = 'slideshow__slide slide-active';
 			slideshowImage.className = 'slideshow__slide-image';
 			slideshowImage.src = imageTripsUrl;
+			slideshowImage.loading = 'lazy';
 			slideshowPrice.textContent = '$' + item.price;
 			slideshowName.textContent = item.title;
 			slideshowDuration.textContent = item.duration + ' days';
