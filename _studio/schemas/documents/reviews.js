@@ -23,10 +23,5 @@ export default {
 			title: 'Destination',
 			type: 'string',
 		},
-		{
-			name: 'tripImage',
-			title: 'Image from Trip',
-			type: 'image',
-		},
 	],
 };
