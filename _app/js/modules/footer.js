@@ -22,7 +22,7 @@ export default async function footerDOM() {
 		const formDataContainer = document.createElement('div');
 		const formCheckbox = document.createElement('input');
 		const formCheckboxLabel = document.createElement('label');
-		const formButton = document.createElement('button');
+		const formButton = document.createElement('input');
 
 		footerGrid.className = 'footer__grid';
 		footerContact.className = 'footer__contact';
@@ -52,6 +52,7 @@ export default async function footerDOM() {
 		formCheckboxLabel.htmlFor = 'data';
 		formButton.className = 'button';
 		formButton.textContent = 'Send form';
+		formButton.type = 'submit';
 		formButton.setAttribute('href', '#');
 
 		container.appendChild(footerGrid);
