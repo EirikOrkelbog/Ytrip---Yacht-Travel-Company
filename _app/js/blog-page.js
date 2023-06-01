@@ -6,7 +6,7 @@ navigationDOM();
 footerDOM();
 
 export default async function blogPage() {
-	const query = `*[_type == 'blogPost']{image, title, about, _id}`;
+	const query = `*[_type == 'blogPost']{imageSmall, title, about, _id}`;
 	const blogPosts = await sanity.fetch(query);
 
 	const container = document.querySelector('.blog');
@@ -15,7 +15,7 @@ export default async function blogPage() {
 		const blogHeading = document.createElement('h2');
 		const blogGrid = document.createElement('div');
 
-		blogHeading.className = 'subheading-mobile blog__heading';
+		blogHeading.className = 'subheading blog__heading';
 		blogHeading.textContent = 'Our blog';
 		blogGrid.className = 'blog__page-grid';
 
@@ -24,7 +24,7 @@ export default async function blogPage() {
 
 		for (const blogPost of blogPosts) {
 			// Getting image url
-			const imageId = blogPost.image.asset._ref;
+			const imageId = blogPost.imageSmall.asset._ref;
 			const imageUrl = await fetchImage(imageId);
 
 			const blogItem = document.createElement('div');
@@ -36,7 +36,7 @@ export default async function blogPage() {
 
 			blogItem.className = 'blog__page-item';
 			blogImage.src = imageUrl;
-			blogImage.alt = '';
+			blogImage.loading = 'lazy';
 			blogImage.className = 'blog__image';
 			blogPostContainer.className = 'blog__item-text';
 			blogPostHeading.textContent = blogPost.title;

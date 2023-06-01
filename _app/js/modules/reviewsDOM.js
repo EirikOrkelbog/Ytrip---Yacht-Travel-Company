@@ -18,7 +18,7 @@ export default async function reviewsDOM() {
 		slides.className = 'reviews__slides';
 		slideButtons.className = 'reviews__buttons';
 		slideImage.className = 'reviews__image';
-		slideImage.src = '/_app/assets/images/compressed/review.jpg';
+		slideImage.src = '/_app/assets/images/small/review.jpg';
 		buttonPrevious.className = 'slideshow__button button-previous';
 		buttonPrevious.innerHTML = '&larr;';
 		buttonPrevious.id = 'review__previous';
@@ -43,7 +43,7 @@ export default async function reviewsDOM() {
 
 			slide.className = 'reviews__slide review__visible';
 			reviewContent.className = 'reviews__content';
-			reviewHeading.className = 'subheading-mobile';
+			reviewHeading.className = 'subheading';
 			reviewHeading.textContent = item.reviewTitle;
 			reviewParagraph.className = 'reviews__paragraph';
 			reviewParagraph.textContent = item.review;

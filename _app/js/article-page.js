@@ -27,7 +27,7 @@ export default async function articlePage() {
 		const writerImageAsset = await sanity.fetch(writerImageQuery);
 		const writerImage = writerImageAsset[0].url;
 
-		const imageAssetId = article[0].image.asset._ref;
+		const imageAssetId = article[0].imageLarge.asset._ref;
 		const imageAssetQuery = `*[_id == "${imageAssetId}"]`;
 		const imageAsset = await sanity.fetch(imageAssetQuery);
 		const imageUrl = imageAsset[0].url;
@@ -42,7 +42,8 @@ export default async function articlePage() {
 
 		articleImage.className = 'article__image';
 		articleImage.src = imageUrl;
-		articleHeading.className = 'subheading-mobile article__heading';
+		articleImage.loading = 'lazy';
+		articleHeading.className = 'subheading article__heading';
 		articleHeading.textContent = article[0].title;
 		articleInfo.className = 'article__info';
 		articleWriterImage.className = 'article__writer-image';

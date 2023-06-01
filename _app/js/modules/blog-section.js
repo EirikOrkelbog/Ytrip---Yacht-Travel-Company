@@ -2,7 +2,7 @@ import { sanity } from "../sanity.js";
 
 export default async function blogSection() {
 	const query = `*[_type == 'blogPost'] | order(_createdAt asc)[0..3] {
-		image,
+		imageSmall,
 		about,
 		 _id,
 		 title,
@@ -10,13 +10,13 @@ export default async function blogSection() {
 
 	const blogPosts = await sanity.fetch(query);
 	const container = document.querySelector('.blog');
-	
+
 	async function renderBlogPostsHTML() {
 		const blogHeading = document.createElement('h2');
 		const blogGrid = document.createElement('div');
 		const blogLink = document.createElement('a');
 
-		blogHeading.className = 'subheading-mobile';
+		blogHeading.className = 'subheading';
 		blogHeading.textContent = 'Our blog';
 		blogGrid.className = 'blog__grid';
 		blogLink.className = 'blog__link';
@@ -24,7 +24,8 @@ export default async function blogSection() {
 		blogLink.href = '/pages/blog.html';
 
 		for (const blogPost of blogPosts) {
-			const imageAssetId = blogPost.image.asset._ref;
+			console.log(blogPost);
+			const imageAssetId = blogPost.imageSmall.asset._ref;
 			const imageAssetQuery = `*[_id == "${imageAssetId}"]`;
 			const imageAsset = await sanity.fetch(imageAssetQuery);
 			const imageUrl = imageAsset[0].url;
@@ -39,6 +40,7 @@ export default async function blogSection() {
 			blogItem.className = 'blog__item';
 			blogImage.className = 'blog__image';
 			blogImage.src = imageUrl;
+			blogImage.loading = 'lazy';
 			blogTextContainer.className = 'blog__item-text';
 			blogItemHeading.className = 'blog__item-text span';
 			blogItemHeading.textContent = blogPost.title;

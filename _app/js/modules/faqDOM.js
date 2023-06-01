@@ -18,9 +18,9 @@ export default async function faqDOM() {
 		faqContentContainer.className = 'faq__container faq__questions';
 		faqSubheading.textContent = 'FAQ';
 		faqSubheading.className = 'faq__subheading';
-		faqHeading.className = 'subheading-mobile';
+		faqHeading.className = 'subheading';
 		faqHeading.textContent = 'Frequently asked questions';
-		faqImage.src = '/_app/assets/images/compressed//faq.jpg';
+		faqImage.src = '/_app/assets/images/small//faq.jpg';
 		faqImage.className = 'faq__image';
 
 		faqContainer.appendChild(faqSubheading);
