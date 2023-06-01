@@ -20,7 +20,7 @@
 	right: -256px;
 	padding: 0 4rem;
 	gap: var(--flex-gap);
-	font-size: var(--subheading-mobile);
+	font-size: var(--subheading);
 	font-family: var(--paragraphs);
 	color: var(--secondary-color);
 	background-color: rgba(0, 0, 0, 0.9);
@@ -65,7 +65,7 @@
 		width: auto;
 		position: static;
 		transform: translate(0, 0);
-		font-size: var(--subheading);
+		font-size: var(--heading-small);
 		background-color: transparent;
 		color: var(--secondary-color);
 		padding: 0;
