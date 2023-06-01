@@ -1,5 +1,5 @@
 import { sanity } from "./sanity.js";
-import navigationDOM from "./modules/navigation.js";
+import navigationDOM from "./modules/navigationDOM.js";
 import fetchImage from "./modules/fetchImage.js";
 import footerDOM from "./modules/footer.js";
 navigationDOM();
@@ -107,6 +107,5 @@ export default async function cruisesPage() {
 		}
 	}
 	renderCruisesHTML();
-
 }
 cruisesPage();

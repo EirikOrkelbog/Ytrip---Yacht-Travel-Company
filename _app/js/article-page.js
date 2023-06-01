@@ -1,5 +1,5 @@
 import { sanity } from "./sanity.js";
-import navigationDOM from "./modules/navigation.js";
+import navigationDOM from "./modules/navigationDOM.js";
 import footerDOM from "./modules/footer.js";
 navigationDOM();
 footerDOM();
