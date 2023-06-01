@@ -8,14 +8,17 @@ export default async function reviewsDOM() {
 
 	const container = document.querySelector('.reviews');
 
-	async function renderReviewsHTML() {
+	function renderReviewsHTML() {
 		const slides = document.createElement('div');
+		const slideImage = document.createElement('img');
 		const slideButtons = document.createElement('div');
 		const buttonPrevious = document.createElement('button');
 		const buttonNext = document.createElement('button');
 
 		slides.className = 'reviews__slides';
 		slideButtons.className = 'reviews__buttons';
+		slideImage.className = 'reviews__image';
+		slideImage.src = '/_app/assets/images/compressed/review.jpg';
 		buttonPrevious.className = 'slideshow__button button-previous';
 		buttonPrevious.innerHTML = '&larr;';
 		buttonPrevious.id = 'review__previous';
@@ -24,16 +27,13 @@ export default async function reviewsDOM() {
 		buttonNext.innerHTML = '&rarr;';
 
 		container.appendChild(slides);
+		slides.appendChild(slideImage);
 		slides.appendChild(slideButtons);
 		slideButtons.appendChild(buttonPrevious);
 		slideButtons.appendChild(buttonNext);
 
 		for (const item of items) {
-			const imageReviewId = item.tripImage.asset._ref;
-			const imageReviewUrl = await fetchImage(imageReviewId);
-
 			const slide = document.createElement('div');
-			const slideImage = document.createElement('img');
 			const reviewContent = document.createElement('div');
 			const reviewHeading = document.createElement('h2');
 			const reviewParagraph = document.createElement('p');
@@ -42,8 +42,6 @@ export default async function reviewsDOM() {
 			const quotation = document.createElement('img');
 
 			slide.className = 'reviews__slide review__visible';
-			slideImage.className = 'reviews__image';
-			slideImage.src = imageReviewUrl;
 			reviewContent.className = 'reviews__content';
 			reviewHeading.className = 'subheading-mobile';
 			reviewHeading.textContent = item.reviewTitle;
@@ -58,7 +56,6 @@ export default async function reviewsDOM() {
 			reviewContent.appendChild(reviewer);
 			reviewContent.appendChild(reviewTrip);
 			reviewContent.appendChild(quotation);
-			slide.appendChild(slideImage);
 			slide.appendChild(reviewContent);
 			slides.appendChild(slide);
 		}
