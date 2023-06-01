@@ -1,5 +1,5 @@
 import { sanity } from "./sanity.js";
-import navigationDOM from "./modules/navigation.js";
+import navigationDOM from "./modules/navigationDOM.js";
 import fetchImage from "./modules/fetchImage.js";
 import footerDOM from "./modules/footer.js";
 navigationDOM();
@@ -9,9 +9,19 @@ export default async function blogPage() {
 	const query = `*[_type == 'blogPost']{image, title, about, _id}`;
 	const blogPosts = await sanity.fetch(query);
 
-	const container = document.querySelector('.blog__page-grid');
+	const container = document.querySelector('.blog');
 
 	async function renderBlogHTML() {
+		const blogHeading = document.createElement('h2');
+		const blogGrid = document.createElement('div');
+
+		blogHeading.className = 'subheading-mobile blog__heading';
+		blogHeading.textContent = 'Our blog';
+		blogGrid.className = 'blog__page-grid';
+
+		container.appendChild(blogHeading);
+		container.appendChild(blogGrid);
+
 		for (const blogPost of blogPosts) {
 			// Getting image url
 			const imageId = blogPost.image.asset._ref;
@@ -39,8 +49,7 @@ export default async function blogPage() {
 			blogPostContainer.appendChild(blogPostLink);
 			blogItem.appendChild(blogImage);
 			blogItem.appendChild(blogPostContainer);
-			container.appendChild(blogItem);
-
+			blogGrid.appendChild(blogItem);
 		}
 	}
 	renderBlogHTML();
