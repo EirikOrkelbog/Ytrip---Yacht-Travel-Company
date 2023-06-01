@@ -7,11 +7,22 @@ export default async function blogSection() {
 		 _id,
 		 title,
 	 }`;
+
 	const blogPosts = await sanity.fetch(query);
-	const blogGrid = document.querySelector('.blog__grid');
+	const container = document.querySelector('.blog');
 	
 	async function renderBlogPostsHTML() {
-		
+		const blogHeading = document.createElement('h2');
+		const blogGrid = document.createElement('div');
+		const blogLink = document.createElement('a');
+
+		blogHeading.className = 'subheading-mobile';
+		blogHeading.textContent = 'Our blog';
+		blogGrid.className = 'blog__grid';
+		blogLink.className = 'blog__link';
+		blogLink.textContent = 'Read all articles here';
+		blogLink.href = '/pages/blog.html';
+
 		for (const blogPost of blogPosts) {
 			const imageAssetId = blogPost.image.asset._ref;
 			const imageAssetQuery = `*[_id == "${imageAssetId}"]`;
@@ -36,7 +47,9 @@ export default async function blogSection() {
 			blogItemLink.textContent = 'Read more →';
 			blogItemLink.href = `/pages/articles.html?id=${blogPost._id}`;
 
-
+			container.appendChild(blogHeading);
+			container.appendChild(blogGrid);
+			container.appendChild(blogLink);
 			blogGrid.appendChild(blogItem);
 			blogItem.appendChild(blogImage);
 			blogItem.appendChild(blogTextContainer);
