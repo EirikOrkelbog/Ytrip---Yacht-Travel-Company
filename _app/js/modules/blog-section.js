@@ -24,7 +24,6 @@ export default async function blogSection() {
 		blogLink.href = '/pages/blog.html';
 
 		for (const blogPost of blogPosts) {
-			console.log(blogPost);
 			const imageAssetId = blogPost.imageSmall.asset._ref;
 			const imageAssetQuery = `*[_id == "${imageAssetId}"]`;
 			const imageAsset = await sanity.fetch(imageAssetQuery);
