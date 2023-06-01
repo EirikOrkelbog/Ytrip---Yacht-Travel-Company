@@ -50,6 +50,7 @@ p {
 	text-transform: uppercase;
 	text-align: center;
 	margin-top: 2rem;
+	border: none;
 }
 
 .button:hover {
