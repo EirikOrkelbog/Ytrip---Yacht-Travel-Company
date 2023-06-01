@@ -2,12 +2,11 @@
 	/* Font-size desktop */
 	--paragraph: 1rem;
 	--heading: clamp(4rem, 8vw, 6rem);
-	--subheading: 1.2rem;
-	--arrows: 1.4rem; 
+	--heading-small: 1.2rem;
+	--arrows: 1.4rem;
 
 	/* Font-size mobile */
-	--heading-mobile: 4rem;
-	--subheading-mobile: 2rem;
+	--subheading: 2rem;
 
 	/* Font-weight */
 	--regular: 400;
